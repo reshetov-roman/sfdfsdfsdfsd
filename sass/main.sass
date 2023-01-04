@@ -1,0 +1,1195 @@
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+*:before, *:after
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-weight: 400
+	overflow-x: hidden
+	margin: 0
+	// height: 500vh
+	font-family: 'Roboto', sans-serif
+	
+p
+	margin: 0
+
+a
+	text-decoration: none
+	outline: none
+	display: inline-block
+	color: #000
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: bottom
+
+ul li,
+ol li
+	list-style: none
+	display: block
+	margin: 0
+
+span
+	display: inline-block
+
+ul, ol
+	display: block
+	margin: 0
+	padding-left: 0
+
+button
+	outline: none
+	border: 0
+	padding: 0
+	cursor: pointer
+
+strong
+	display: inline-block
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	font-weight: normal
+
+.site-wrap
+	overflow: hidden
+.container
+	margin: 0 auto
+	position: relative
+	// padding: 0 15px
+	max-width: 1600px
+	width: 100%
+	overflow: hidden
+
+$colorWhite: #fff
+$colorBlack: #000
+
+
+
+.avatar-mySwiper1, .avatar-mySwiper2
+	// max-width: 1440px
+	margin: 0 100px
+	.swiper-slide 
+		text-align: center 
+		display: -webkit-box 
+		display: -ms-flexbox 
+		display: -webkit-flex 
+		display: flex 
+		-webkit-box-pack: center 
+		-ms-flex-pack: center 
+		-webkit-justify-content: center 
+		justify-content: center 
+		-webkit-box-align: center 
+		-ms-flex-align: center 
+		-webkit-align-items: center 
+		align-items: center 
+
+
+
+
+//start avatar-header
+
+.avatar
+	&-wrapper
+		overflow: hidden
+		&-top
+			position: relative
+			&__main
+			&__main-db
+			&__main-dn
+				display: none
+			&__arrow
+				position: absolute
+				top: 31%
+				left: 50%
+				transform: translateX(-50%)
+				width: 4.5%
+				height: 3.5%
+				background-color: #fff
+				overflow: hidden
+				border-radius: 50%
+				cursor: pointer
+			&__jellyfish_1
+				position: absolute
+				top: 4.7%
+				left: 2.9%
+				width: 15%
+			&__jellyfish_2
+				position: absolute
+				top: 26.9%
+				left: -1.6%
+				width: 15%
+			&__jellyfish_3
+				position: absolute
+				top: 58.8%
+				left: 26.3%
+				width: 15%
+			&__jellyfish_4
+				position: absolute
+				top: 14.1%
+				right: 10%
+				width: 11%
+			&__jellyfish_5
+				position: absolute
+				top: 58.2%
+				right: 2.6%
+				width: 15%
+			&__jellyfish_6
+				position: absolute
+				top: 75%
+				left: 0.7%
+				width: 14.6%
+			&__jellyfish_7
+				position: absolute
+				top: 85.7%
+				right: 10%
+				width: 11%
+			&__message
+				position: absolute
+				left: 31.4%
+				top: 82.8%
+				width: 2.5%
+				height: 1.8%
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				background: rgb(0 0 0 / 31%)
+				border: 2px solid transparent
+				cursor: pointer
+				transition: .4s
+				&:hover
+					border: 2px solid rgb(255 255 255 / 41%)
+					.avatar-wrapper-top__target
+						transition: .2s
+						width: 35%
+						height: 35%
+					.avatar-wrapper-top__float
+						top: 50px
+						z-index: 1
+						opacity: 1
+						transition: .3s
+			&__target
+				width: 61%
+				height: 63%
+				background-color: #fff
+				border-radius: 50%
+				transition: .4s
+			&__float
+				transition: .4s
+				opacity: 0
+				transition: cubic-bezier(1,0,0,0) .4s
+				z-index: -1
+				position: absolute
+				top: 35px
+				width: 212px
+				background-color: #fff
+				padding: 15px 12px 10px 12px
+				border-radius: 10px
+				color: #000
+				cursor: auto
+			&__float-link
+				position: relative
+				display: block
+				color: #828282
+				margin-bottom: 2px	
+				font-size: 12px
+				transition: .3s
+				&:hover
+					transition: .3s
+					color: blue
+				&::after
+					content: url('../img/icon/arroe_right.png')
+					position: absolute
+					right: 0
+					top: -2px
+			&__float-text
+				font-size: 14px
+			&__float-price
+				font-size: 24px
+			&__message2
+				position: absolute
+				right: 25.4%
+				top: 73.8%
+				width: 2.5%
+				height: 1.8%
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				border: 2px solid transparent
+				background: rgb(0 0 0 / 31%)
+				transition: .3s
+				cursor: pointer
+				transition: .4s
+				&:hover
+					border: 2px solid rgb(255 255 255 / 41%)
+					.avatar-wrapper-top__target2
+						transition: .2s
+						width: 35%
+						height: 35%
+					.avatar-wrapper-top__float2
+						top: 50px
+						z-index: 1
+						opacity: 1
+			&__target2
+				transition: .3s
+				width: 61%
+				height: 63%
+				background-color: #fff
+				border-radius: 50%
+			&__float2
+				transition: .4s
+				transition: cubic-bezier(1,0,0,0) .4s
+				opacity: 0
+				z-index: -1
+				position: absolute
+				top: 35px
+				width: 212px
+				background-color: #fff
+				padding: 15px 12px 10px 12px
+				border-radius: 10px
+				color: #000
+				cursor: auto
+			&__float-link2
+				position: relative
+				display: block
+				color: #828282
+				margin-bottom: 2px	
+				font-size: 12px
+				transition: .3s
+				&:hover
+					transition: .3s
+					color: blue
+				&::after
+					content: url('../img/icon/arroe_right.png')
+					position: absolute
+					right: 0
+					top: -2px
+			&__float-text2
+				font-size: 14px
+			&__float-price2
+				font-size: 24px
+		&-slider1
+			position: relative
+			margin: 38px 0
+			&__item
+				border: 1px solid #BDBDBD
+				padding: 5%
+				border-radius: 10px
+			&__info
+				margin-top: 10px
+				padding: 0 3%
+				text-align: left
+			&__title
+				color: #828282
+				margin-bottom: 5px
+				font-size: 14px
+				display: block
+			&__text
+				display: block
+				color: #000000
+				font-size: 18px
+				margin-bottom: 11%
+			&__price
+				font-size: 24px
+				color: #000000	
+				margin-bottom: 10px
+			&__btn
+				text-align: center
+				font-size: 96%
+				color: #fff
+				border-radius: 10px
+				padding: 5% 6%
+				line-height: 15px
+				background-color: #F15A2C
+				transition: background-color .3s
+				&:hover
+					transition: background-color .3s
+					background-color: #dd4d21
+		&-pandora
+			position: relative
+			&-main-dn
+				display: none
+			&__message
+				position: absolute
+				left: 23.7%
+				top: 84.5%
+				width: 2.3%
+				height: 2.1%
+				border: 2px solid transparent
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				background: rgb(0 0 0 / 31%)
+				cursor: pointer
+				transition: .3s
+				&:hover
+					border: 2px solid rgb(255 255 255 / 41%)
+					.avatar-wrapper-pandora__target
+						transition: .3s
+						width: 35%
+						height: 35%
+					.avatar-wrapper-pandora__float
+						top: 50px
+						z-index: 1
+						opacity: 1
+						transition: .3s
+			&__target
+				width: 61%
+				height: 63%
+				background-color: #fff
+				border-radius: 50%
+				transition: .3s
+			&__float
+				transition: .3s
+				transition: cubic-bezier(1,0,0,0) .4s
+				opacity: 0
+				z-index: -1
+				position: absolute
+				top: 35px
+				width: 212px
+				background-color: #fff
+				padding: 15px 12px 10px 12px
+				border-radius: 10px
+				color: #000
+				cursor: auto
+			&__float-link
+				position: relative
+				display: block
+				color: #828282
+				margin-bottom: 2px	
+				font-size: 12px
+				transition: .3s
+				&:hover
+					transition: .3s
+					color: blue
+				&::after
+					content: url('../img/icon/arroe_right.png')
+					position: absolute
+					right: 0
+					top: -2px
+			&__float-text
+				font-size: 14px
+			&__float-price
+				font-size: 24px
+			&__message2
+				position: absolute
+				right: 20%
+				top: 70%
+				width: 2.3%
+				height: 2.2%
+				border-radius: 50%
+				border: 2px solid transparent
+				display: flex
+				justify-content: center
+				align-items: center
+				background: rgb(0 0 0 / 31%)
+				cursor: pointer
+				transition: .3s
+				&:hover
+					border: 2px solid rgb(255 255 255 / 41%)
+					.avatar-wrapper-pandora__target2
+						width: 35%
+						height: 35%
+						transition: .3s
+					.avatar-wrapper-pandora__float2
+						top: 50px
+						z-index: 1
+						opacity: 1
+						transition: .3s
+			&__jellyfish_1
+				position: absolute
+				top: 9.5%
+				left: 2%
+				width: 15%
+			&__jellyfish_2
+				position: absolute
+				top: 39.5%
+				left: 9%
+				width: 15%
+			&__jellyfish_3
+				position: absolute
+				top: 35%
+				right: 9%
+				width: 15%
+			&__jellyfish_4
+				position: absolute
+				top: 59%
+				right: 45%
+				width: 14%
+			&__jellyfish_5
+				position: absolute
+				top: 64%
+				right: 3.7%
+				width: 11%
+			&__target2
+				width: 61%
+				height: 63%
+				transition: .3s
+				background-color: #fff
+				border-radius: 50%
+			&__float2
+				transition: .3s
+				transition: cubic-bezier(1,0,0,0) .4s
+				opacity: 0
+				z-index: -1
+				position: absolute
+				top: 35px
+				width: 250px
+				background-color: #fff
+				padding: 15px 12px 10px 12px
+				border-radius: 10px
+				color: #000
+				cursor: auto
+			&__float-link2
+				position: relative
+				display: block
+				color: #828282
+				margin-bottom: 2px	
+				font-size: 12px
+				transition: .3s
+				&:hover
+					transition: .3s
+					color: blue
+				&::after
+					content: url('../img/icon/arroe_right.png')
+					position: absolute
+					right: 0
+					top: -2px
+			&__float-text2
+				font-size: 14px
+			&__float-price2
+				font-size: 24px
+		&-slider2
+			position: relative
+			margin: 38px 0
+			&__item
+				border: 1px solid #BDBDBD
+				padding: 5%
+				border-radius: 10px
+			&__info
+				margin-top: 10px
+				padding: 0 3%
+				text-align: left
+			&__title
+				color: #828282
+				margin-bottom: 5px
+				font-size: 14px
+				display: block
+			&__text
+				display: block
+				color: #000000
+				font-size: 18px
+				margin-bottom: 11%
+			&__price
+				font-size: 24px
+				color: #000000	
+				margin-bottom: 10px
+			&__btn
+				text-align: center
+				font-size: 96%
+				color: #fff
+				border-radius: 10px
+				padding: 5% 6%
+				line-height: 15px
+				background-color: #F15A2C
+				transition: background-color .3s
+				&:hover
+					transition: background-color .3s
+					background-color: #dd4d21
+		&-footer
+			position: relative
+			margin-top: 60px
+			&__bg
+			&__btn
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				top: 22.1%
+			&__bg-dn
+				display: none
+	&-video-slider
+		&__bg
+			background-image: url('../img/bgsliderdesk.png')
+			background-size: cover
+			height: 100vh
+			// background-size: 83.8%
+			background-position: center top
+			background-repeat: no-repeat
+			display: flex
+			align-items: center
+			justify-content: center
+
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after
+	content: ''
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after
+	content: ''
+
+
+.swiper-container-video 
+	.swiper-slide 
+		display: flex 
+		align-items: center 
+		justify-content: center 
+		flex-direction: column
+		transition: all 200ms linear 
+		transform: scale(0.9) 
+		&.swiper-slide-active
+			transform: scale(1.1) 
+			z-index: 9
+
+//end avatar-header
+
+// .avatar-wrapper-slider1 .swiper-button-prev.swiper-button-prev-sl1swiper-button-disabled,
+// .avatar-wrapper-slider1 .swiper-button-next.swiper-button-next-sl0.swiper-button-disabled
+// 	display: none
+
+.avatar-wrapper-slider1 .swiper-button-prev 
+	background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_prev.svg) !important
+	background-size: 12px
+	background-repeat: no-repeat
+	background-position: center center
+	width: 47px
+	height: 47px
+	background-color: #F3F3F3
+	border-radius: 50%
+.avatar-wrapper-slider1 .swiper-button-next 
+	background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_next.svg) !important
+	background-size: 12px
+	background-repeat: no-repeat
+	background-position: center center
+	width: 47px
+	height: 47px
+	background-color: #F3F3F3
+	border-radius: 50%
+	
+
+.avatar-wrapper-slider2 .swiper-button-prev 
+	background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_prev.svg) !important
+	background-size: 12px
+	background-repeat: no-repeat
+	background-position: center center
+	width: 47px
+	height: 47px
+	background-color: #F3F3F3
+	border-radius: 50%
+.avatar-wrapper-slider2 .swiper-button-next 
+	background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_next.svg) !important
+	background-size: 12px
+	background-repeat: no-repeat
+	background-position: center center
+	width: 47px
+	height: 47px
+	background-color: #F3F3F3
+	border-radius: 50%
+	
+
+.slider1-fide .swiper-button-prev-fd2 
+	background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_prev.svg) !important
+	background-size: 12px
+	background-repeat: no-repeat
+	background-position: center center
+	width: 47px
+	height: 47px
+	background-color: #F3F3F3
+	border-radius: 50%
+.slider1-fide .swiper-button-next-fd1
+	background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_next.svg) !important
+	background-size: 12px
+	background-repeat: no-repeat
+	background-position: center center
+	width: 47px
+	height: 47px
+	background-color: #F3F3F3
+	border-radius: 50%
+
+
+.slider2-fide  .swiper-pagination-bullets.swiper-pagination-horizontal
+	// bottom: 0
+	// top: 75%
+.slider2-fide  .swiper-pagination-bullet
+	background: #fff
+	opacity: .5
+	width: 20px
+	height: 20px
+.slider2-fide  .swiper-pagination-bullet.swiper-pagination-bullet-active
+	background: #fff
+	opacity: 1
+
+.slider2-fide .swiper-button-prev-fd4
+	background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_prev.svg) !important
+	background-size: 12px
+	background-repeat: no-repeat
+	background-position: center center
+	width: 47px
+	height: 47px
+	background-color: #F3F3F3
+	border-radius: 50%
+.slider2-fide .swiper-button-next-fd3
+	background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_next.svg) !important
+	background-size: 12px
+	background-repeat: no-repeat
+	background-position: center center
+	width: 47px
+	height: 47px
+	background-color: #F3F3F3
+	border-radius: 50%
+
+
+.slider1-fide .swiper-pagination-bullets.swiper-pagination-horizontal
+	// bottom: 0
+	// top: 75%
+.slider1-fide .swiper-pagination-bullet
+	background: #fff
+	opacity: .5
+	width: 20px
+	height: 20px
+.slider1-fide .swiper-pagination-bullet.swiper-pagination-bullet-active
+	background: #fff
+	opacity: 1
+
+
+.wrap .swiper-pagination-bullets.swiper-pagination-horizontal
+	bottom: 0
+	top: 75%
+.wrap .swiper-pagination-bullet
+	background: #fff
+	opacity: .5
+	width: 20px
+	height: 20px
+.wrap .swiper-pagination-bullet.swiper-pagination-bullet-active
+	background: #fff
+	opacity: 1
+
+
+
+
+	
+.wrap .swiper-button-prev.swiper-button-prev-f0.swiper-button-disabled,
+.wrap .swiper-button-next.swiper-button-next-f1.swiper-button-disabled
+	display: none
+
+.wrap 
+	position: relative
+	width: 100% 
+	max-width: 645px 
+	// max-width: 245px
+	margin: auto
+	.wrap-inner 
+	.swiper-outter 
+		width: 100% 
+		// padding: 0 65px 
+		position: relative 
+	.swiper-button-prev,
+	.swiper-button-next 
+		width: 40px 
+		height: 40px 
+		// margin-top: -20px 
+		background-size: 100% auto 
+	.swiper-button-prev 
+		background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_prev.svg) !important
+		background-size: 12px
+		background-repeat: no-repeat
+		background-position: center center
+		width: 47px
+		height: 47px
+		background-color: #fff
+		border-radius: 50%
+		left: -30%
+	.swiper-button-next 
+		background-image: url(https://simg2.marwin.kz/media/wysiwyg/subscribe/nav_next.svg) !important
+		background-size: 12px
+		background-repeat: no-repeat
+		background-position: center center
+		width: 47px
+		height: 47px
+		background-color: #fff
+		border-radius: 50%
+		right: -30%
+	.swiper-container 
+		width: 100% 
+		position: relative
+	// .swiper-wrapper 
+	// 	// width: 100% 
+	// // .swiper-slide 
+	// // 	width: 100% 
+	// // 	background-color: #EFEFEF 
+	// // 	width: 100% 
+	// // 	height: 0 
+	// 	// padding-bottom: 56.25% 
+	// 	.video-container 
+	// 		width: 100% 
+	// 		overflow: hidden
+	// 		padding-bottom: 56.25%
+	// 		padding-top: 30px
+	// 		height: 0 
+	// 		position: relative 
+	// 		// padding-bottom: 100% 
+	// 		iframe 
+	// 			position: absolute 
+	// 			left: 0
+	// 			top: 0
+	// 			width: 100% 
+	// 			height: 100% 
+	// 			border: none
+	// 			// bottom: 0
+	// 			// left: 0 
+
+.video-container 
+	width: 100% 
+	overflow: hidden
+	padding-bottom: 56.25%
+	padding-top: 30px
+	height: 0 
+	position: relative  
+	iframe 
+		position: absolute 
+		left: 0
+		top: 0
+		width: 100% 
+		height: 100% 
+		border: none
+
+
+
+.swp-info
+	position: absolute
+	top: 100%
+	color: #fff
+	max-width: 535px
+	margin-top: 35px
+	font-size: 22px
+	text-align: center
+
+
+
+.slider1-fide
+	// margin-top: -29.8%
+	margin-top: -1px
+	position: relative
+	background-image: url('../img/avabgdesk12-min.png')
+	background-position-x: center 
+	background-size: cover
+	background-repeat: no-repeat
+	&-wrapper
+		&__item
+			display: flex
+			align-items: center
+			justify-content: space-around
+		&__item-left
+			// border: 1px solid red
+			max-width: 43%
+			width: 100%
+			// margin-left: 6.3%
+		&__item-right
+			max-width: 31.6%
+			width: 100%
+			// margin-left: 9.5%
+			backdrop-filter: blur(23px)
+			background: rgba(255, 255, 255, 0.2)
+		&__item-info
+			padding: 4% 7% 9% 6%
+			border: 1px solid #fff
+			border-radius: 15px
+			color: #fff
+		&__item-lego
+			font-size: 14px
+		&__item-title
+			font-size: 34px
+			margin-bottom: 9%
+		&__item-desc
+			font-size: 14px
+			margin-bottom: 16%
+		&__item-link
+			position: relative
+			font-size: 20px
+			color: #fff
+			padding-right: 20px
+			&::after
+				content: url('../img/slider-fide_1/arrow-white_avatar.png')
+				position: absolute
+				left: 100%
+				top: 1px
+
+
+#video-swiper
+	display: flex
+
+	
+.slider2-fide
+	// margin-top: -29.8%
+	position: relative
+	margin-top: -1px
+	background-image: url('../img/avabgdesk22-min.png')
+	background-position-x: center
+	background-size: cover
+	background-repeat: no-repeat
+	// background: #2f76c9
+	&-wrapper
+		&__item
+			display: flex
+			align-items: center
+			justify-content: space-around
+		&__item-left
+			// border: 1px solid red
+			max-width: 43%
+			width: 100%
+			// margin-left: 6.3%
+		&__item-right
+			max-width: 31.6%
+			width: 100%
+			// margin-left: 9.5%
+			backdrop-filter: blur(23px)
+			background: rgba(255, 255, 255, 0.2)
+		&__item-info
+			padding: 4% 7% 9% 6%
+			border: 1px solid #fff
+			border-radius: 15px
+			color: #fff
+		&__item-lego
+			font-size: 14px
+		&__item-title
+			font-size: 34px
+			margin-bottom: 40px
+		&__item-desc
+			font-size: 14px
+			margin-bottom: 65px
+		&__item-link
+			position: relative
+			font-size: 20px
+			color: #fff
+			padding-right: 20px
+			&::after
+				content: url('../img/slider-fide_1/arrow-white_avatar.png')
+				position: absolute
+				left: 100%
+				top: 1px
+
+.swiper-container-fide1-mobile,
+.swiper-container-fide2-mobile,
+.avatar-wrapper-footer__bg-dn,
+.avatar-wrapper-footer__btn-dn
+	display: none
+
+
+
+@media screen and (max-width: 1400px)
+	// .swiper-container-video .swiper-slide
+	// 	transform: scale(0.8) 
+	// .swiper-container-video .swiper-slide.swiper-slide-active
+	// 	transform: scale(1)
+	.swp-info
+		font-size: 18px
+
+@media screen and (max-width: 1050px)
+	.wrap .swiper-button-prev
+		left: -22%
+	.wrap .swiper-button-next
+		right: -22%
+
+@media screen and (max-width: 992px)
+	.slider1-fide-wrapper__item
+		justify-content: flex-start
+		align-items: flex-end
+		padding-bottom: 26px
+	.slider1-fide-wrapper__item-desc
+		margin-bottom: 8%
+	.slider1-fide-wrapper__item-title
+		margin-bottom: 3%
+		font-size: 29px
+	.slider1-fide-wrapper__item-link
+		font-size: 16px
+	.slider1-fide-wrapper__item-info
+		padding: 4%
+	.slider1-fide-wrapper__item-right
+		max-width: 56.6%
+		margin-left: 4%
+	.slider1-fide-wrapper__item-left
+		max-width: 35%
+	.slider1-fide .swiper-button-next-fd1
+		right: 50px
+		top: unset
+		bottom: 60px
+	.slider2-fide-wrapper__item
+		justify-content: flex-start
+		align-items: flex-end
+		padding-bottom: 26px
+	.slider2-fide-wrapper__item-desc
+		margin-bottom: 8%
+	.slider2-fide-wrapper__item-title
+		margin-bottom: 3%
+		font-size: 29px
+	.slider2-fide-wrapper__item-link
+		font-size: 16px
+	.slider2-fide-wrapper__item-info
+		padding: 4%
+	.slider2-fide-wrapper__item-right
+		max-width: 56.6%
+		margin-left: 4%
+	.slider2-fide-wrapper__item-left
+		max-width: 35%
+	.slider2-fide .swiper-button-next-fd3
+		right: 50px
+		top: unset
+		bottom: 60px
+	.wrap .swiper-button-prev
+		left: -10%
+	.wrap .swiper-button-next
+		right: -10%
+	.swiper-container-video 
+		.swiper-slide 
+			transform: scale(0.7) 
+			&.swiper-slide-active
+				transform: scale(0.9)
+
+@media screen and (max-width: 800px)
+	.swiper-container-video 
+		.swiper-slide 
+			transform: scale(0.8) 
+			&.swiper-slide-active
+				transform: scale(1)
+	.wrap
+		position: static
+		max-width: 535px
+	.avatar-video-slider__bg
+		position: relative
+	.wrap .swiper-button-prev
+		left: 10px
+	.wrap .swiper-button-next
+		right: 10px
+	
+@media screen and (max-width: 670px)
+	.slider1-fide-wrapper__item
+		align-items: end
+	.slider1-fide .swiper-button-next-fd1,
+	.slider1-fide .swiper-button-prev-fd2
+		width: 35px
+		height: 35px
+		background-size: 8px
+	.slider2-fide .swiper-button-next-fd3,
+	.slider2-fide .swiper-button-prev-fd4
+		width: 35px
+		height: 35px
+		background-size: 8px
+	.swiper-container-video 
+		.swiper-slide 
+			transform: scale(0.8) 
+			&.swiper-slide-active
+				transform: scale(1)
+	.wrap
+		position: static
+		max-width: 80%
+	.avatar-video-slider__bg
+		position: relative
+	.wrap .swiper-button-prev
+		display: none
+	.wrap .swiper-button-next
+		display: none
+
+
+@media screen and (max-width: 600px) 
+	.avatar-mySwiper1, .avatar-mySwiper2
+		margin: 0 15px
+	.avatar-wrapper-slider1 .swiper-button-next,
+	.avatar-wrapper-slider1 .swiper-button-prev
+		display: none
+	.avatar-wrapper-slider1__price
+		font-size: 18px
+	.avatar-wrapper-slider1__text
+		margin-bottom: 3%
+	.avatar-wrapper-slider1__btn
+		padding: 8% 6%
+		font-size: 11px
+	.avatar-wrapper-slider1__title
+		font-size: 14px
+	.avatar-wrapper-slider2 .swiper-button-next,
+	.avatar-wrapper-slider2 .swiper-button-prev
+		display: none
+	.slider1-fide-wrapper__item-left
+		max-width: 50%
+	.slider1-fide-wrapper__item-right
+		max-width: 44.6%
+	.slider1-fide-wrapper__item
+		justify-content: space-around
+	.slider1-fide-wrapper__item-info
+		margin-right: 3%
+	.slider2-fide-wrapper__item-left
+		max-width: 50%
+	.slider2-fide-wrapper__item-right
+		max-width: 44.6%
+	.slider2-fide-wrapper__item
+		justify-content: space-around
+	.slider2-fide-wrapper__item-info
+		margin-right: 3%
+	.swp-info
+		font-size: 16px
+		
+
+@media screen and (max-width: 479px)
+	.avatar-wrapper-top__main-db,
+	.avatar-wrapper-pandora-main-db,
+	.avatar-wrapper-footer__bg-db,
+	.avatar-wrapper-footer__btn-db
+		display: none
+	.avatar-wrapper-top__main-dn,
+	.avatar-wrapper-pandora-main-dn,
+	.avatar-wrapper-footer__bg-dn,
+	.avatar-wrapper-footer__btn-dn
+		display: block
+		margin: auto
+	.swiper-container-fide2
+		display: none
+	.avatar-wrapper-footer
+		margin-top: 6px
+	.jellyfish-transition
+		display: none
+	.avatar-wrapper-top__arrow
+		display: none
+	.avatar-wrapper-top__message
+		left: 34.4%
+		top: 82.8%
+		width: 8.5%
+		height: 2.7%
+	.avatar-wrapper-top__message2
+		right: 37.4%
+		top: 65.8%
+		width: 8.5%
+		height: 2.7%
+	.slider1-fide
+		background-image: url('../img/avabgmob12-min.png')
+		background-size: auto
+	.slider2-fide
+		background-image: url('../img/avabgmob22-min.png')
+		background-size: auto
+	.slider1-fide .swiper-button-prev-fd2, 
+	.slider1-fide .swiper-button-next-fd1
+		display: none
+	// .wrap
+	// 	width: unset
+	// 	max-width: 4%
+	.swp-info
+		display: none
+	.avatar-video-slider__bg
+		height: unset
+		padding: 20% 0
+	// .swiper-container-video .swiper-slide
+	// 	transform: scale(0.5) 
+	// .swiper-container-video .swiper-slide.swiper-slide-active
+	// 	transform: scale(0.7)
+	.wrap .swiper-button-next,
+	.wrap .swiper-button-prev
+		display: none
+	.slider1-fide-wrapper__item
+		align-items: end
+		flex-direction: column
+		background-color: rgba(255, 255, 255, 0.2)
+		backdrop-filter: blur(23px)
+		border: 1px solid #fff
+		border-radius: 15px
+		padding: 30px 20px 20px 20px
+		margin-left: 2%
+		margin-right: 2%
+	.slider1-fide-wrapper__item-title
+		margin-bottom: 12%
+	.avatar-video-slider__bg
+		background-image: url('../img/bgslidermob.png')
+	.slider2-fide-wrapper__item
+		align-items: end
+		flex-direction: column
+		background-color: rgba(255, 255, 255, 0.2)
+		backdrop-filter: blur(23px)
+		border: 1px solid #fff
+		border-radius: 15px
+		padding: 30px 20px 20px 20px
+		margin-left: 2%
+		margin-right: 2%
+	.slider2-fide-wrapper__item-title
+		margin-bottom: 12%
+	.swiper-container-fide1
+		display: none
+	.swiper-container-fide1-mobile,
+	.swiper-container-fide2-mobile
+		display: block
+	.slider1-fide-wrapper__item-left
+		max-width: 100%
+		padding-bottom: 21%
+	.slider1-fide-wrapper__item-right
+		max-width: unset
+		backdrop-filter: none
+		background: none
+	.slider1-fide-wrapper__item-info
+		padding: 0
+		border-radius: 0
+		border: none
+		margin-right: 0
+	.swiper-container-fide1-mobile
+		padding-bottom: 10%
+	.avatar-mySwiper1, .avatar-mySwiper2
+		margin: 0
+	.slider2-fide-wrapper__item-left
+		max-width: 100%
+		padding-bottom: 21%
+	.slider2-fide-wrapper__item-right
+		max-width: unset
+		backdrop-filter: none
+		background: none
+	.slider2-fide-wrapper__item-info
+		padding: 0
+		border-radius: 0
+		border: none
+		margin-right: 0
+	.swiper-container-fide2-mobile
+		padding-bottom: 10%
+	.avatar-mySwiper1, .avatar-mySwiper2
+		margin: 0
+	.container
+		max-width: 394px
+	.avatar-wrapper-pandora__message
+		left: 28.7%
+		top: 74.5%
+		width: 10.3%
+		height: 3.6%
+	.avatar-wrapper-pandora__message2
+		width: 10.3%
+		height: 3.6%
+		right: 27%
+		top: 60%
+	
+		
+
+@media screen and (max-width: 420px)
+	.avatar-wrapper-slider1__title
+		font-size: 12px
+	.avatar-wrapper-slider1__text
+		font-size: 15px
+	.avatar-wrapper-slider1__price
+		font-size: 17px 
+	
